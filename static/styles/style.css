@@ -25,14 +25,30 @@ header h1 {
     height: 40px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .left-section,
 .right-section {
+    flex: 1;
     padding: 1em;
     margin: 0em;
 }
 
 .left-section {
     border-right: 6px solid rgb(5, 96, 96);
+}
+
+@media (max-width: 400px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
 }
 
 .channels,

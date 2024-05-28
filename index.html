@@ -17,65 +17,60 @@
         </h1>
         <h2>Lets connect to anyone from anywhere</h2>
     </header>
-    <main>
-        <section class="left-section">
-            <!--  All channel list-->
-            <div id="channel-list">
-                <h2>Channels</h2>
-                <button class="channels selected" id="general-channel">General</button>
-                <button class="channels" id="family-channel" disabled>Family</button>
-                <button class="channels" id="private-channel" disabled>Office</button>
+    <main class="main-container">
+    <section class="left-section">
+        <!-- All channel list-->
+        <div id="channel-list">
+            <h2>Channels</h2>
+            <button class="channels selected" id="general-channel">General</button>
+            <button class="channels" id="family-channel" disabled>Family</button>
+            <button class="channels" id="private-channel" disabled>Office</button>
+        </div>
+        <br>
+        <p id="warning-p"></p>
+        <!-- Existing user login form-->
+        <div id="login-form">
+            <p class="guest-greeting">Welcome, Guest</p>
+            <input type="text" name="" id="username" placeholder="Enter your user name" required />
+            <input type="password" id="password" placeholder="Enter your password" required />
+            <div class="btn-class">
+                <button id="sign-in-btn">Login</button>
             </div>
-            <br>
-            <p id="warning-p"></p>
-            <!-- Existing user login form-->
-            <div id="login-form">
-                <p class="guest-greeting">Welcome, Guest</p>
-                <input type="text" name="" id="username" placeholder="Enter your user name" required />
-                <input type="password" id="password" placeholder="Enter your password" required />
+            <div>New user <button id="register-user-btn">Register here....</button> </div>
+        </div>
+        <!-- New user register form-->
+        <div id="register-form">
+            <input type="text" name="" id="r-firstname" placeholder="Enter your first name" required />
+            <input type="text" name="" id="r-lastname" placeholder="Enter your last name" required />
+            <input type="text" name="" id="r-username" placeholder="Enter your user name" required />
+            <input type="password" id="r-password" placeholder="Enter your password" required />
+            <div class="btn-class">
+                <button id="register-btn">Register</button>
+            </div>
+        </div>
+        <!-- after login page -->
+        <div id="welcome-user">
+            <p class="user-greeting"></p>
+            <div></div>
+            <div class="btn-class">
+                <button id="signout-btn">Sign out</button>
+            </div>
+        </div>
+    </section>
+    <section class="right-section">
+        <!-- Selected channel message area -->
+        <h2 id="channel-heading">General</h2>
+        <p id="warn"></p>
+        <div id="message-list"></div>
+        <p id="warning-tag"></p>
+        <div id="message-form">
+            <div id="avatar">Guest </div>
+            <input type="text" id="input-message" required />
+            <button id="send-message">Send</button>
+        </div>
+    </section>
+</main>
 
-                <div class="btn-class">
-                    <button id="sign-in-btn">Login</button>
-                </div>
-                <div>New user <button id="register-user-btn">Register here....</button> </div>
-            </div>
-            <!-- New user register form-->
-            <div id="register-form">
-                <input type="text" name="" id="r-firstname" placeholder="Enter your first name" required />
-                <input type="text" name="" id="r-lastname" placeholder="Enter your last name" required />
-                <input type="text" name="" id="r-username" placeholder="Enter your user name" required />
-                <input type="password" id="r-password" placeholder="Enter your password" required />
-                <div class="btn-class">
-                    <button id="register-btn">Register</button>
-                </div>
-            </div>
-
-            <!-- after login page -->
-            <div id="welcome-user">
-                <p class="user-greeting"></p>
-                <div></div>
-                <div class="btn-class">
-                    <button id="signout-btn">Sign out</button>
-                </div>
-            </div>
-        </section>
-        <section class="right-section">
-            <!-- Selected channel message area -->
-            <h2 id="channel-heading">General</h2>
-            <p id="warn"></p>
-            <div id="message-list">
-
-            </div>
-            <p id="warning-tag"></p>
-            <div id="message-form">
-                <div id="avatar">Guest </div>
-                <input type="text" id="input-message" required />
-                <button id="send-message">Send</button>
-
-            </div>
-
-        </section>
-    </main>
 
 </body>
 
