@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0em;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: rgb(155, 243, 243);
     font-size: 120%;
 }
@@ -15,7 +15,6 @@ body>* {
 header {
     text-align: center;
     background: rgb(12, 186, 186);
-    width: 100%;
 }
 
 header h1 {
@@ -29,27 +28,47 @@ header h1 {
 .main-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    border-top: .3em solid rgb(5, 96, 96);
 }
 
 .left-section,
 .right-section {
     flex: 1;
-    padding: 1em;
+    margin: 0em;
+}
+
+#login-form{
+    margin: 1em;
 }
 
 .left-section {
-    border-right: .3em solid rgb(5, 96, 96);
+    border-right: 6px solid rgb(5, 96, 96);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .main-container {
         flex-direction: column;
+        max-width: 90%;
     }
 
     .left-section, .right-section {
-        width: 100%;
+        width: 90%;
+    }
+    .left-section{
+        border: none;
+        margin-right: 1em;
+    }
+    #message-form{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #avatar{
+        max-width: 2.2em;
+        align-items: center;
+        margin-left: 5em;
     }
 }
 
@@ -63,10 +82,6 @@ header h1 {
 
 #selected {
     border: 2px solid yellow;
-}
-
-main>* {
-    flex-grow: 1;
 }
 
 #login-form,
