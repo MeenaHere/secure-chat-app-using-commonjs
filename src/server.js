@@ -7,7 +7,7 @@ import userRoutes from './routes/userroutes.js'
 const app = express()
 dotenv.config()
 
-const staticPath = url.fileURLToPath(new URL('../static', import.meta.url))
+const staticPath = url.fileURLToPath(new URL('../', import.meta.url))
 
 app.use(express.json())
 app.use((req, res, next) => {
