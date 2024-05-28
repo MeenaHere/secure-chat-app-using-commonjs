@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0em;
+    min-height: 100vh;
+    background-color: rgb(155, 243, 243);
+    font-size: 120%;
+}
+
+body>* {
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    background: rgb(12, 186, 186);
+}
+
+header h1 {
+    color: brown;
+}
+
+#secure-icon {
+    height: 40px;
+}
+
+.left-section,
+.right-section {
+    padding: 1em;
+    margin: 0em;
+}
+
+.left-section {
+    border-right: 6px solid rgb(5, 96, 96);
+}
+
+.channels,
+#private-channel {
+    flex-grow: 1;
+    display: flex;
+    margin: 1em;
+    padding: 0.2em 0.8em;
+}
+
+#selected {
+    border: 2px solid yellow;
+}
+
+
+main {
+    flex-grow: 1;
+    display: flex;
+    padding: 0em;
+    border-top: 6px solid rgb(5, 96, 96);
+}
+
+main>* {
+    flex-grow: 1;
+}
+
+#login-form,
+#register-form,
+#welcome-user {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+input {
+    padding: 0.5em;
+    display: block;
+}
+
+#sign-in-btn,
+#register-btn,
+#signout-btn {
+    margin-top: 5px;
+    padding: 0.5em 1.5em;
+    background: rgb(12, 186, 186);
+    ;
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+
+#register-user-btn {
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 85%;
+}
+
+#register-user-btn:hover,
+button:hover {
+    cursor: pointer;
+}
+
+#main-message-area {
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.btn-class {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#input-message,
+#send-message {
+    margin-top: 0.7em;
+    padding: 0.5em 1.5em;
+}
+
+#send-message {
+    background: rgb(12, 186, 186);
+    color: white;
+    font-weight: 800;
+    border: none;
+}
+
+#avatar {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 3px solid rgb(12, 186, 186);
+
+    /* border-radius: 50%; */
+}
+
+#avatar::first-letter {
+    text-transform: capitalize;
+}
+
+.message-list {
+    display: flex;
+}
+
+.user-avatar {
+    display: flex;
+    /* border: 3px solid rgb(12, 186, 186);
+     border-radius: 50%;
+    margin: 0.1em;*/
+}
+
+.user-avatar>p {
+    margin: 0;
+    padding-left: 1em;
+    font-size: medium;
+}
+
+.avatar {
+    font-size: x-large !important;
+    padding-left: 0.3em !important;
+}
+
+.outer>li:nth-child(2n) {
+    color: blue;
+}
+
+.outer>li:nth-child(2n + 1) {
+    color: red;
+}
+
+.msg-div {
+    padding: 0.5em;
+}
+
+.avatar::first-letter {
+    text-transform: capitalize;
+}
+
+#message-form {
+    display: flex;
+    padding-bottom: 2em;
+}
+
+.outer {
+    /*display: flex; */
+    border: 2px solid black;
+    margin: 0.2em;
+}
+
+.outer>button {
+    display: inline;
+    margin: 5px;
+    padding: 0.5em 1.5em;
+    background: rgb(12, 186, 186);
+    ;
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+
+.msg-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#register-form,
+#welcome-user,
+#warning-p {
+    display: none;
+}
