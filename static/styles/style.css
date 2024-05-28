@@ -44,7 +44,7 @@ header h1 {
     border-right: 6px solid rgb(5, 96, 96);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     body{
         margin: 0;
         padding: 0;
